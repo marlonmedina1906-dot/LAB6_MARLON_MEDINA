@@ -1,2 +1,331 @@
-<!-- TODO: construye aquí tu página (Lab #6) -->
- 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marlon Medina">
+    <meta name="codigo-sesion" content="CODIGO_SESION">
+    <meta name="description" content="Portal de Recursos Académicos y Multimedia UTP sobre el festival de música Rolling Loud">
+
+    <title>Laboratorio 6 - Rolling Loud | Portal del Festival de Música</title>
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- CSS interno -->
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f6f9; color: #333; line-height: 1.6; }
+        header { background-color: #1b365d; color: white; padding: 1.5rem; text-align: center; }
+        nav { background-color: #00a3e0; padding: 0.8rem; text-align: center; }
+        nav a { color: white; margin: 0 12px; text-decoration: none; font-weight: bold; }
+        .container { display: flex; max-width: 1100px; margin: 20px auto; gap: 20px; padding: 0 15px; }
+        main { flex: 3; background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        aside { flex: 1; background: #eef2f7; padding: 20px; border-radius: 8px; height: fit-content; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #cbd5e1; padding: 10px; text-align: left; }
+        th { background-color: #1b365d; color: white; }
+        tfoot { background-color: #e2e8f0; font-weight: bold; }
+        figure { border: 1px solid #ddd; padding: 10px; border-radius: 5px; text-align: center; margin: 15px 0; }
+        figcaption { font-size: 0.85rem; color: #666; margin-top: 5px; }
+        footer { background-color: #1b365d; color: white; text-align: center; padding: 1rem; margin-top: 30px; }
+        .code-block { background: #1e1e1e; color: #d4d4d4; padding: 10px; border-radius: 5px; font-family: monospace; }
+        mark { background-color: #fff176; padding: 2px 5px; border-radius: 3px; }
+        abbr { cursor: help; border-bottom: 1px dotted #666; }
+    </style>
+
+    <script src="js/app.js" defer></script>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>Rolling Loud: El Festival de Música Hip-Hop Global</h1>
+        <p>Portal informativo del festival de música urbana más grande del mundo</p>
+        <noscript>Tu navegador tiene JavaScript desactivado; algunas funciones no estarán disponibles.</noscript>
+    </header>
+
+    <nav>
+        <a href="#articulos">Historia</a>
+        <a href="#lineup">Line-up</a>
+        <a href="#multimedia">Multimedia</a>
+        <a href="#registro">Registro</a>
+        <a href="#referencias">Referencias</a>
+    </nav>
+
+    <div class="container">
+        <main id="ficha-1751" class="k-xxxxxx">
+
+            <!-- SECCIÓN 1: ARTÍCULOS -->
+            <section id="articulos">
+                <h2>1. Historia y Crecimiento del Festival</h2>
+
+                <article>
+                    <h3>De Miami a Escenario Global</h3>
+                    <p>
+                        Desde su primera edición el <time datetime="2015-05-01">1 de mayo de 2015</time>,
+                        <strong>Rolling Loud</strong> pasó de ser un evento local en Miami a convertirse en
+                        una gira internacional con paradas en varias ciudades del mundo. Hoy es reconocido
+                        como el <mark>festival de hip-hop más importante del planeta</mark>, atrayendo a
+                        cientos de miles de asistentes cada año.
+                    </p>
+                    <p>
+                        Su crecimiento se puede resumir en una frase que circula entre organizadores de
+                        eventos: <q>el festival que convirtió al hip-hop en un fenómeno de estadios</q>,
+                        según una reseña del sector de festivales musicales. La sigla
+                        <abbr title="Rolling Loud">RL</abbr> es hoy sinónimo de cultura urbana en vivo.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>El Line-up y las Entradas 2026</h3>
+                    <p>
+                        Cada edición reúne artistas <em>consolidados</em> junto a nuevas propuestas del
+                        género. El aforo del recinto principal ronda los 100<sup>3</sup> asistentes por
+                        día (una cifra aproximada usada solo como referencia de escala), mientras que la
+                        temperatura promedio en el escenario suele superar los 30<sub>°C</sub> en horario
+                        de tarde.
+                    </p>
+                    <p>
+                        Como dato informativo, los precios de referencia de preventa para la edición 2026
+                        bajaron de <del>$299</del> a <ins>$249</ins> durante la primera semana.
+                        <small>Precios de referencia sujetos a cambios sin previo aviso.</small>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+
+            <!-- SECCIÓN 2: TABLA DE LINE-UP -->
+            <section id="lineup">
+                <h2>2. Line-up y Horarios por Escenario</h2>
+
+                <table>
+                    <caption>Programación de Artistas Principales - Edición 2026</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Día</th>
+                            <th scope="col">Escenario</th>
+                            <th scope="col">Artista</th>
+                            <th scope="col">Hora</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Día 1</th>
+                            <td>Escenario Norte</td>
+                            <td>Playboi Carti</td>
+                            <td>9:00 PM</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Día 1</th>
+                            <td>Escenario Sur</td>
+                            <td>Destroy Lonely</td>
+                            <td>7:30 PM</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Día 2</th>
+                            <td>Escenario Sur</td>
+                            <td>Trippie Redd</td>
+                            <td>8:30 PM</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Día 2</th>
+                            <td>Escenario Norte</td>
+                            <td>Future</td>
+                            <td>10:00 PM</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Día 3</th>
+                            <td>Escenario Central</td>
+                            <td>Ken Carson</td>
+                            <td>10:00 PM</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Total de artistas confirmados</td>
+                            <td>48 artistas</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <hr>
+
+           <!-- SECCIÓN 3: MULTIMEDIA -->
+            <section id="multimedia">   
+
+    <h2>Headliners de la Edición 2026</h2>
+    <figure>
+        <img src="https://tse2.mm.bing.net/th/id/OIP.xZkxj06W1CtHARjPDa7AdgAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+        <figcaption>Rolling loud 2026</figcaption>
+    </figure>
+
+    <h3>Video del Festival (Short)</h3>
+    <figure>
+        <iframe
+            src="https://www.youtube.com/embed/UmcSgIPV06w"
+            title="Short de YouTube sobre el ambiente de Rolling Loud"
+            style="width: 315px; height: 560px; max-width: 100%; border: 0;"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+        <figcaption>Así se vive el ambiente del festival</figcaption>
+    </figure>
+
+    <h3>Ubicación del Recinto: Camping World Stadium, Orlando, Florida</h3>
+    <iframe
+        src="https://maps.google.com/maps?q=Camping%20World%20Stadium%20Orlando%20Florida&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        title="Mapa de ubicación de Camping World Stadium en Orlando, Florida"
+        loading="lazy"
+        allowfullscreen="">
+    </iframe>
+
+    <h3>Preguntas Frecuentes</h3>
+    <details>
+        <summary>¿Qué debo llevar al festival?</summary>
+        <p>Identificación, entrada digital, protector solar, botella de agua reutilizable y ropa cómoda para largas jornadas de pie.</p>
+    </details>
+    <details>
+        <summary>¿Puedo reingresar al recinto el mismo día?</summary>
+        <p>Depende del tipo de pulsera adquirida; las entradas VIP y Backstage suelen permitir reingreso, la General no.</p>
+    </details>
+
+    <h3>Glosario del Festival</h3>
+    <dl>
+        <dt>Headliner</dt>
+        <dd>Artista principal que cierra el escenario en un horario estelar.</dd>
+        <dt>Wristband</dt>
+        <dd>Pulsera de acceso que identifica el tipo de entrada del asistente.</dd>
+        <dt>Mosh pit</dt>
+        <dd>Zona frente al escenario donde el público salta y se empuja al ritmo de la música.</dd>
+    </dl>
+
+    <h3>Requisitos para Asistir</h3>
+    <ul>
+        <li>Ser mayor de edad o ir acompañado de un adulto responsable</li>
+        <li>Presentar la entrada digital y un documento de identidad</li>
+        <li>Cumplir con las normas de seguridad del recinto</li>
+    </ul>
+            </section>
+
+                <h3>Preguntas Frecuentes</h3>
+                <details>
+                    <summary>¿Qué debo llevar al festival?</summary>
+                    <p>Identificación, entrada digital, protector solar, botella de agua reutilizable y ropa cómoda para largas jornadas de pie.</p>
+                </details>
+                <details>
+                    <summary>¿Puedo reingresar al recinto el mismo día?</summary>
+                    <p>Depende del tipo de pulsera adquirida; las entradas VIP y Backstage suelen permitir reingreso, la General no.</p>
+                </details>
+
+                <h3>Glosario del Festival</h3>
+                <dl>
+                    <dt>Headliner</dt>
+                    <dd>Artista principal que cierra el escenario en un horario estelar.</dd>
+                    <dt>Wristband</dt>
+                    <dd>Pulsera de acceso que identifica el tipo de entrada del asistente.</dd>
+                    <dt>Mosh pit</dt>
+                    <dd>Zona frente al escenario donde el público salta y se empuja al ritmo de la música.</dd>
+                </dl>
+
+                <h3>Requisitos para Asistir</h3>
+                <ul>
+                    <li>Ser mayor de edad o ir acompañado de un adulto responsable</li>
+                    <li>Presentar la entrada digital y un documento de identidad</li>
+                    <li>Cumplir con las normas de seguridad del recinto</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <!-- SECCIÓN 4: FORMULARIO -->
+            <section id="registro">
+                <h2>4. Registro de Asistentes</h2>
+
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Datos del asistente</legend>
+
+                        <p>
+                            <label for="nombre-asistente">Nombre completo:</label>
+                            <input type="text" id="nombre-asistente" name="nombre" required minlength="3" maxlength="60" placeholder="Ej. Marlon Medina" autocomplete="name" autofocus>
+                        </p>
+                        <p>
+                            <label for="correo">Correo electrónico:</label>
+                            <input type="email" id="correo" name="correo" required placeholder="correo@ejemplo.com" autocomplete="email">
+                        </p>
+                        <p>
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{7,12}" placeholder="60001234">
+                        </p>
+                        <p>
+                            <label for="cantidad">Cantidad de entradas:</label>
+                            <input type="number" id="cantidad" name="cantidad" min="1" max="6" step="1" value="1">
+                        </p>
+                        <p>
+                            <label for="fecha">Fecha de asistencia:</label>
+                            <input type="date" id="fecha" name="fecha">
+                        </p>
+                        <p>
+                            <label for="volumen">Nivel de entusiasmo (0-10):</label>
+                            <input type="range" id="volumen" name="entusiasmo" min="0" max="10" value="5">
+                        </p>
+                        <p>
+                            <label for="artista-favorito">Artista favorito:</label>
+                            <input type="text" id="artista-favorito" name="artista" list="lista-artistas" placeholder="Elige o escribe">
+                            <datalist id="lista-artistas">
+                                <option value="Playboi Carti">
+                                <option value="Trippie Redd">
+                                <option value="Ken Carson">
+                            </datalist>
+                        </p>
+                        <p>
+                            <label for="dia">Día preferido:</label>
+                            <select id="dia" name="dia">
+                                <option value="1">Día 1</option>
+                                <option value="2">Día 2</option>
+                                <option value="3">Día 3</option>
+                            </select>
+                        </p>
+                        <p>
+                            Tipo de entrada:
+                            <input type="radio" id="tipo-general" name="entrada" value="general" checked>
+                            <label for="tipo-general">General</label>
+                            <input type="radio" id="tipo-vip" name="entrada" value="vip">
+                            <label for="tipo-vip">VIP</label>
+                        </p>
+                        <p>
+                            <label for="comentarios">Comentarios:</label><br>
+                            <textarea id="comentarios" name="comentarios" rows="4" cols="40" maxlength="300"></textarea>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="acepta" name="acepta" required>
+                            <label for="acepta">Acepto las normas del recinto</label>
+                        </p>
+                        <button type="submit">Enviar registro</button>
+                    </fieldset>
+                </form>
+            </section>
+
+        </main>
+
+        <aside id="referencias">
+            <h3>Recursos Rápidos</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+                <li><a href="https://www.w3.org/" target="_blank" rel="noopener">W3C Standard</a></li>
+                <li><a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C Validator</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p style="font-size: 0.9rem;">Laboratorio 6 - Desarrollo Web &copy; 2026 Marlon Medina</p>
+    </footer>
+
+</body>
+</html>
